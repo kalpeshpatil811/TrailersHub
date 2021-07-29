@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('/Images/bkg.jpg');
+    font-family: 'Poppins', sans-serif;
+    min-width: 360px;
+    min-height: 720px;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 100,1),rgba(0, 0, 100,0.9));
+    color: azure;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+    height: fit-content;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+}
+header h1{
+    display: flex;
+}
+#icon1{
+    font-size: 24pt;
+    padding: 7px;
+    color: cyan;
+}
+header a{
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: 600;
+    background-color: azure;
+    color: crimson;
+    border: solid 2px;
+    border-radius: 30px;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+}
+header a:hover{
+    background-color: crimson;
+    color: azure;
+}
+#icon2{
+    font-size: 16pt;
+    padding: 5px;
+}
+.main{
+    align-items: center;
+    position: relative;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+}
+.main h1{
+    font-size: 34pt;
+    text-align: center;
+}
+.main h3{
+    text-align: center;
+    font-size: 18pt;
+    max-width: 50%;
+}
+.main ol h3{
+    max-width: 80%;
+    min-width: 50%;
+}
+.main ol{
+    width: 80%;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main li{
+    width: 300px;
+    height: 400px;
+    color: gray;
+    font-size: larger;
+    font-weight:600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    transition: 200ms;
+}
+.main li:hover{
+    width: 305px;
+    height: 405px;
+}
+.main a{
+    color: gray;
+    font-size: larger;
+    font-weight:400;
+}
+.img{
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.4);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    color: azure;
+    background-image: linear-gradient(to top,rgba(0, 0, 0,1),rgba(0, 0, 0, 0.9));
+}
+.Nmain{
+    align-items: center;
+    position: relative;
+    color: azure;
+}
+.Nmain h3{
+    font-size: 18pt;
+    font-weight: 600;
+}
+.Nmain ol{
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Nmain li{
+    min-width: 600px;
+    min-height: 400px;
+    color: gray;
+    font-size: larger;
+    font-weight:600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    transition: 200ms;
+}
+.Nmain li:hover{
+    width: 605px;
+    height: 405px;
+}
+iframe{
+    width: 90%;
+    height: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.4);
+}
+.Cmain{
+    align-items: center;
+    position: relative;
+    color: gray;
+    font-size: 16pt;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    position: relative;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    min-height: 550px;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2%;
+    margin-top: 1%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+.input{
+    position: inherit;
+    margin-left: 2%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    width: 70%;
+    color: lime;
+    background-color: rgba(128, 128, 128, 0.2);
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.4);
+}
+#radio{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+#textarea{
+    display: flex;
+    flex-direction: column;
+}
+#btn{
+    margin-top: 2%;
+    font-size: 16pt;
+    font-weight:400;
+    background-color: rgba(128, 128, 128, 0.2);
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.4);
+    color: lime;
+    border: solid 2px;
+    border-radius: 30px;
+    margin-left: 42%;
+    padding: 5px;
+    height: fit-content;
+    cursor: pointer;
+}
+#btn:hover{
+    margin-left: 41%;
+    font-size: 18pt;
+    color: limegreen;
+}
+
+@media screen and (max-width:600px) {
+    header h1{
+        font-size: 18pt;
+    }
+    #icon1{
+        font-size: 18pt;
+    }
+    header a{
+        font-size: 14pt;
+    }
+    #icon2{
+        font-size: 14pt;
+    }
+    #title{
+        flex: 100%;
+        order: -1;
+        justify-content: center;
+        font-size: 24pt;
+        margin-bottom: 10px;
+    }
+    .main h1{
+        font-size: 22pt;
+    }
+    .main h3{
+        font-size: 14pt;
+        max-width: 75%;
+    }
+    .main ol h3{
+        font-size: 14pt;
+        max-width: 80%;
+        min-width: 40%;
+    }
+    .Nmain li{
+        min-width: 340px;
+        min-height: 250px;
+    }
+    .Nmain li:hover{
+        width: 345px;
+        height: 255px;
+    }
+}
+@media screen and (max-width:1170px){
+    .form{
+        font-size: 14pt;
+    }
+    .input{
+        margin-left: 2%;
+        width: 55%;
+    }
+}
